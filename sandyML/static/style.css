@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    background: url("../static/UB_City_Bangalore.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    width: 500px;
+    margin: 80px auto;
+    background: rgba(255,255,255,0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #222;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    background: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #45a049;
+}
